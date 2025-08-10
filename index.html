@@ -1091,8 +1091,7 @@
         - #CONTACT
       -->
 
-  <article class="contact" data-page="contact">
-
+<article class="contact" data-page="contact">
   <header>
     <h2 class="h2 article-title">Contact</h2>
   </header>
@@ -1106,14 +1105,11 @@
   </section>
 
   <section class="contact-form">
-
     <h3 class="h3 form-title">Contact Form</h3>
 
-    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="form" data-form>
-      <!-- Required hidden field for Netlify -->
+    <!-- IMPORTANT: action points to a real page that exists -->
+    <form name="contact" method="POST" action="/thanks" data-netlify="true" netlify-honeypot="bot-field" class="form" data-form>
       <input type="hidden" name="form-name" value="contact">
-
-      <!-- Honeypot field (hidden from real users) -->
       <p style="display:none;">
         <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
       </p>
@@ -1130,10 +1126,9 @@
         <span>Send Message</span>
       </button>
     </form>
-
   </section>
-
 </article>
+
 
     </div>
 
