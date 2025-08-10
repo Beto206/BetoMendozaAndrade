@@ -1091,44 +1091,49 @@
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+  <article class="contact" data-page="contact">
 
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
+  <header>
+    <h2 class="h2 article-title">Contact</h2>
+  </header>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d185154.90932854608!2d-122.50460393224745!3d47.60859697856638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C%20WA!5e1!3m2!1sen!2sus!4v1753089639518!5m2!1sen!2sus"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
+  <section class="mapbox" data-mapbox>
+    <figure>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d185154.90932854608!2d-122.50460393224745!3d47.60859697856638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C%20WA!5e1!3m2!1sen!2sus!4v1753089639518!5m2!1sen!2sus"
+        width="400" height="300" loading="lazy"></iframe>
+    </figure>
+  </section>
 
-        <section class="contact-form">
+  <section class="contact-form">
 
-          <h3 class="h3 form-title">Contact Form</h3>
+    <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="form" data-form>
+      <!-- Required hidden field for Netlify -->
+      <input type="hidden" name="form-name" value="contact">
 
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+      <!-- Honeypot field (hidden from real users) -->
+      <p style="display:none;">
+        <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
+      </p>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
+      <div class="input-wrapper">
+        <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+        <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+      </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+      <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+      <button class="form-btn" type="submit" data-form-btn>
+        <ion-icon name="paper-plane"></ion-icon>
+        <span>Send Message</span>
+      </button>
+    </form>
 
-          </form>
+  </section>
 
-        </section>
-
-      </article>
+</article>
 
     </div>
 
