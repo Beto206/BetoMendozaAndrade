@@ -6,10 +6,7 @@
   <title>Thanks!</title>
   <meta name="robots" content="noindex" />
 
-  <!-- Your site stylesheet -->
   <link rel="stylesheet" href="/assets/css/style.css" />
-
-  <!-- Ionicons -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
@@ -26,20 +23,26 @@
     *{box-sizing:border-box}
     body{margin:0;background:var(--smoky-black);color:var(--white-2);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
 
-    /* LAYERS */
-    #confettiCanvas{position:fixed;inset:0;pointer-events:none;z-index:1}  /* back */
-    .wrap{min-height:100dvh;display:grid;place-items:center;padding:24px;position:relative;z-index:2} /* middle */
+    /* Layers */
+    #confettiCanvas{position:fixed;inset:0;pointer-events:none;z-index:1}
+    .wrap{min-height:100dvh;display:grid;place-items:center;padding:24px;position:relative;z-index:2}
 
-    /* Card */
-    article.contact{
+    /* Card (scoped overrides to prevent stretching) */
+    article.contact.thanks-card{
       background:var(--eerie-black-2);
       border:1px solid var(--jet);
       border-radius:20px;
       padding:24px;
       width:min(720px,94vw);
+      max-width:720px;
+      height:auto !important;
+      min-height:auto !important;
+      flex:0 0 auto !important;   /* stop flex grow/shrink from parents */
+      align-self:center !important;
+      justify-self:center !important;
       box-shadow:-4px 8px 24px rgba(0,0,0,.28);
-      /* Fallback in case global CSS hides non-active sections */
-      display:block !important;
+      display:block !important;   /* ensure visible even if theme toggles sections */
+      overflow:visible;
     }
     .article-title{margin:0 0 8px}
     .subtitle{color:var(--light-gray-70);margin:0 0 16px}
@@ -54,7 +57,6 @@
       text-decoration:none;transition:transform .15s ease,filter .15s ease
     }
     .form-btn:hover{transform:translateY(-1px);filter:brightness(1.05)}
-
     .btn-ghost{
       background:transparent;color:var(--light-gray);
       border:1px solid rgba(255,255,255,.08);
@@ -75,12 +77,10 @@
   </style>
 </head>
 <body>
-  <!-- background confetti -->
   <canvas id="confettiCanvas"></canvas>
 
   <div class="wrap">
-    <!-- NOTE: 'active' ensures visibility if your CSS hides non-active sections -->
-    <article class="contact active" data-page="contact">
+    <article class="contact active thanks-card" data-page="contact">
       <header>
         <h2 class="h2 article-title">
           <span style="vertical-align:middle;margin-right:.35rem">
@@ -127,7 +127,7 @@
   </div>
 
   <script>
-    // ---------- CONFETTI (background, subtle, smooth ~3–4s total) ----------
+    // Subtle, background confetti with smooth taper (~3s)
     (function confetti(){
       const canvas = document.getElementById('confettiCanvas');
       const ctx = canvas.getContext('2d');
@@ -139,44 +139,41 @@
       function resize(){ W = canvas.width = Math.floor(innerWidth*DPR); H = canvas.height = Math.floor(innerHeight*DPR); }
       resize(); addEventListener('resize', resize);
 
-      function spawn(batch=22){
+      function spawn(batch=18){
         for (let i=0;i<batch;i++){
           confs.push({
             x: Math.random()*W, y: -Math.random()*H*0.4 - 20*DPR,
             w: DPR*(3+Math.random()*3), h: DPR*(6+Math.random()*8),
-            vy: DPR*(1.1+Math.random()*1.6), vx: DPR*(Math.random()-.5)*0.45,
-            rot: Math.random()*Math.PI*2, vr: (Math.random()-.5)*0.1,
+            vy: DPR*(1.0+Math.random()*1.5), vx: DPR*(Math.random()-.5)*0.4,
+            rot: Math.random()*Math.PI*2, vr: (Math.random()-.5)*0.09,
             hue: (i*37 + Math.random()*100)%360
           });
         }
       }
-      // light burst then quick taper
-      spawn(70);
+      spawn(60);
 
       function step(ts){
-        if (!start) start = ts;
-        const t = (ts - start)/1000;
+        if(!start) start=ts;
+        const t=(ts-start)/1000;
         ctx.clearRect(0,0,W,H);
 
-        // brief stream then taper, total ~3–4s
-        if (t < 1.0 && spawning) { if (Math.random()<0.5) spawn(8); }
-        else if (t < 2.2 && spawning) { if (Math.random()<0.2) spawn(5); }
-        else { spawning = false; }
+        if (t<0.9 && spawning){ if (Math.random()<0.45) spawn(6); }
+        else if (t<2.0 && spawning){ if (Math.random()<0.18) spawn(4); }
+        else { spawning=false; }
 
         confs.forEach(c=>{
-          c.x += c.vx; c.y += c.vy; c.rot += c.vr;
-          c.vx *= 0.996; c.vy = Math.min(c.vy + 0.004*DPR, 3.6*DPR);
-          ctx.save(); ctx.translate(c.x, c.y); ctx.rotate(c.rot);
-          ctx.fillStyle = `hsl(${c.hue} 80% 58%)`;
-          ctx.fillRect(-c.w/2, -c.h/2, c.w, c.h);
+          c.x+=c.vx; c.y+=c.vy; c.rot+=c.vr;
+          c.vx*=0.996; c.vy=Math.min(c.vy+0.004*DPR, 3.4*DPR);
+          ctx.save(); ctx.translate(c.x,c.y); ctx.rotate(c.rot);
+          ctx.fillStyle=`hsl(${c.hue} 78% 58%)`;
+          ctx.fillRect(-c.w/2,-c.h/2,c.w,c.h);
           ctx.restore();
         });
 
-        // prune offscreen to allow a natural "last bits" fall
-        for (let i=confs.length-1;i>=0;i--) if (confs[i].y > H + 24*DPR) confs.splice(i,1);
+        for(let i=confs.length-1;i>=0;i--) if(confs[i].y>H+24*DPR) confs.splice(i,1);
 
-        if (spawning || confs.length){ raf = requestAnimationFrame(step); }
-        else { cancelAnimationFrame(raf); removeEventListener('resize', resize); ctx.clearRect(0,0,W,H); }
+        if (spawning || confs.length){ raf=requestAnimationFrame(step); }
+        else { cancelAnimationFrame(raf); removeEventListener('resize',resize); ctx.clearRect(0,0,W,H); }
       }
       requestAnimationFrame(step);
     })();
