@@ -1,0 +1,279 @@
+Beto's Personal Portfolio
+
+# sidebar
+
+alt = Alberto Mendoza Andrade
+Alberto Mendoza Andrade
+Technology Consultant
+
+Show Contacts
+
+Email
+betomendozaandrade@gmail.com
+
+Phone
++1 (253) 533-0689
+
+Birthday
+June 20, 2002
+
+Location
+Seattle, Washington, USA
+
+# navbar
+
+About
+Resume
+Portfolio
+Blog
+Contact
+
+# about
+
+About me
+
+I'm Alberto Mendoza Andrade, a Business Technology Analyst at Deloitte, aspiring Product Manager, and entrepreneur from Seattle, Washington. I’m passionate about solving complex problems with practical, user-centered solutions. This includes building intuitive digital products, driving strategic initiatives, and improving service delivery across industries.
+
+I specialize in connecting technology with people. At 18, I co-founded and operated my family’s construction business, where I led project estimation, client relations, digital marketing, and financial management. During my four-year tenure, I helped generate over $1 million in revenue and increased project leads by 400 percent. That experience shaped my ability to lead under pressure, adapt quickly, and deliver meaningful results.
+
+At Deloitte, I apply the same mindset to help clients modernize workflows, streamline operations, and achieve lasting impact.
+
+My goal is simple: to make your vision clear, compelling, and scalable. I don’t just consult or design. I bring ideas to life in a way that is both effective and uniquely yours.
+
+
+## service
+
+What i'm doing
+
+alt = solution icon
+Business Technology Solutions
+Helping clients improve operations through enterprise systems and tech-driven strategy at a professional level.
+
+alt = calculator icon
+Project Estimation & Sales
+Creating accurate estimates and sales strategies that drive revenue growth and client trust.
+
+alt = refresh icon
+Digital Transformation
+Modernizing traditional businesses with digital tools, automation, and workflow optimization.
+
+alt = mentorship icon
+Mentorship & Leadership
+Supporting student development through mentoring, workshops, and inclusive leadership.
+
+## testimonials
+
+Testimonials
+
+alt = Giancarlo Lucia
+Giancarlo Lucia
+From the very beginning, Alberto Jr. stood out for his professionalism, sharp communication, and business acumen. He was the most prepared and polished of all the contractors I met, clearly bringing both industry knowledge and a business mindset. He managed the project with precision, was transparent about timelines and costs, and delivered everything ahead of schedule. It’s rare to meet someone so young who operates at such a high level. This guy is going places.
+
+alt = Jonnelle Jue
+Jonnelle Jue
+Working with Alberto and his team was a seamless experience. From the permitting process to final walkthroughs, Alberto communicated clearly, coordinated every step, and ensured all design and code requirements were met. He demonstrated attention to detail, responsiveness, and a genuine care for doing things the right way. His leadership made the entire process feel effortless.
+
+alt = Keshav Puttaswamy
+Keshav Puttaswamy
+Alberto is a perfectionist in the best way possible. He approached our complex front step redesign with thoughtful problem-solving, checked every measurement multiple times, and communicated throughout with clarity and patience. Even as the scope expanded, he honored the original quote and timeline. His pride in his work and respect for clients make him stand out.
+
+alt = Ron A.
+Ron A.
+Alberto Jr. brought a level of professionalism and organization you don’t often see in this industry. He was transparent about the process, walked me through each step, and managed the crew with confidence and calm. I felt informed and taken care of the entire time. It was a top-tier customer experience from start to finish, thanks to his leadership.
+
+
+## clients
+
+Clients
+
+alt = client logo
+
+
+
+# resume
+
+Resume
+
+Education
+
+University of Washington, Michael G. Foster School of Business
+2022 — 2025
+Bachelor of Arts in Business Administration; GPA: 3.3
+Concentration in Finance & Information Systems, Minor in Real Estate
+Recipient of prestigious Husky 100 Award, Dean’s List, and multiple, competitve scholarships.
+
+Pierce College
+2020 — 2022
+Associate of Arts in Business Administration; GPA 3.99
+Graduated with Honors
+President's List, Scholarship recepient, and Phi Theta Kappa Honors Society
+
+Experience
+
+Business Technology Solutions Analyst — Deloitte Consulting
+Incoming Fall 2025
+Delivering tech-driven consulting solutions to help clients modernize operations and scale business processes.
+
+Founder & Project Manager — Alpha Concrete, LLC
+2021 — 2025
+Built and scaled a $250K+ construction business. Led digital transformation, implemented Salesforce CRM, and improved profitability through strategic estimation, marketing, and client service.
+
+Student Office Assistant — UW Disability Resources for Students
+2024 — 2025
+Managed student service inquiries and cross-department coordination to support equitable academic access.
+
+Recreation Leader I — Fife Aquatics Center
+2019 — 2024
+Trained staff and leveraged digital tools to enhance efficiency in facility operations and registration processes.
+
+Sales Associate — Sportco Sporting Goods
+2020
+Specialized in camping and outdoor gear. Managed inventory, processed transactions, and delivered personalized customer experiences to boost department sales.
+
+Leadership & Activities
+Internal Vice President — Omega Delta Phi Inc.
+2022 — 2025
+Organized workshops in AI, finance, and legal literacy. Supported academic performance and chapter leadership.
+
+Mentor — Building Networks Program
+2023 — 2025
+Guided first-generation students in career planning, major selection, and professional development.
+
+Consultant — Foster Strategy Case Competition
+Winter 2025
+Developed market entry strategies for Brooks Running, presenting to corporate judges on risk and feasibility.
+
+Leadership Roles — ALPFA (Association of Latino Professionals for America)
+2022 — 2024
+Led internal engagement, mentorship events, and fundraising efforts to strengthen chapter programming and community involvement.
+
+Consultant — DubGrub Overhaul Project (IS 460)
+Spring 2024
+Advised on feature upgrades for the DubGrub app, including rewards and scheduling integration. Proposed encryption and 2FA to improve user engagement and data security.
+
+Lead Researcher & Presenter — AI in Cybersecurity (IS 410)
+Winter 2024
+Led a class-wide presentation on AI-driven tools for penetration testing. Explored how automation enhances vulnerability detection and strengthens cybersecurity practices.
+
+
+My Skills
+
+Business Strategy
+90%
+AI Tools
+90%
+SQL
+80%
+Python
+70%
+
+
+# portfolio
+
+All
+Tech Strategy
+AI & Innovation
+Product Design
+Data Analysis
+
+Select category
+All
+Tech Strategy
+AI & Innovation
+Product Design
+Data Analysis
+
+alt = ai-pen-test
+AI-Driven Penetration Testing
+AI & Innovation
+Led a project exploring AI in penetration testing, proposing scalable, ethical cybersecurity testing solutions.
+
+alt = dubgrub
+DubGrub App Upgrade
+Product Design
+Enhanced a university food app by integrating Google Maps, MyPlan, and better menu and payment features.
+
+alt = triplex
+Real Estate Investment Analysis
+Tech Strategy
+Conducted a financial and strategic investment analysis for a Seattle triplex in a high-interest market.
+
+alt = smartdoc
+SmartDoc Telehealth AI
+AI & Innovation
+Developed a telemedicine concept using digital humans and AI to support people with disabilities 24/7.
+
+alt = sleep-study
+Sleep Quality Analysis
+Data Analysis
+Analyzed lifestyle and sleep data using Python and SQL to uncover factors affecting sleep quality.
+
+alt = tesla-scooter
+Tesla Scooter Concept
+Product Design
+Created a sustainable electric scooter concept aimed at young adults, aligning with Tesla's market values.
+
+alt = order-system
+Order Management System
+Tech Strategy
+Built a Python program to track, analyze, and manage business orders by type, revenue, and quantity.
+
+
+
+# blog
+
+alt = Meta RPM Prep
+Product Management
+July 21, 2025
+Preparing for the Meta RPM Role: My Game Plan
+Documenting how I'm prepping for one of the most competitive PM programs in tech. From resources I'm using to how I’m strengthening my product sense and storytelling skills.
+
+alt = Estimating Like a Pro
+Construction Business
+August 4, 2025
+Estimating Like a Pro: Turning Quotes into Signed Deals
+Lessons from running Alpha Concrete. How I used data, transparency, and clear communication to build trust and boost conversion rates.
+
+alt = No Internship, No Problem
+Career Journey
+August 11, 2025
+How I Landed a Full-Time Consulting Role Without an Internship
+The path wasn’t traditional, but it worked. Here’s how I turned my business experience and networking into a consulting offer from Deloitte.
+
+alt = Starting from Scratch
+Content Creation
+August 18, 2025
+Starting from Scratch: Launching My Creator Journey
+Why I decided to start making content as a Latino entrepreneur, and how I’m finding my voice in public.
+
+alt = From Concrete to Consulting
+Career Journey
+August 25, 2025
+From Concrete to Consulting: My Transition into Tech
+Reflecting on the shift from managing construction crews to joining Deloitte. Skills that translated, lessons I had to relearn, and everything in between.
+
+alt = Mentorship in Construction
+Construction Business
+September 1, 2025
+So You Want to Start a Concrete Business? Read This First.
+A tactical guide for aspiring founders. Tools, permits, cost breakdowns, and real lessons from the field.
+
+alt = Creator Mindset
+Content Creation
+September 8, 2025
+Building Discipline and Momentum as a New Creator
+A raw look into the mental game behind creating publicly, building consistency, and staying motivated when nobody’s watching.
+
+
+
+# contact
+
+Contact
+
+Contact Form
+
+Full name
+Email address
+Your Message
+
+Send Message

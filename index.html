@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beto's Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box" style="overflow: hidden; border-radius: 50%; width: 150px; height: 150px;">
+          <img src="./assets/images/my-avatar.jpg" alt="Alberto Mendoza Andrade" width="150" style="border-radius: 50%; object-fit: cover; object-position: center; width: 100%; height: 100%; transform: scale(1.15);">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Alberto Mendoza Andrade" style="font-size: 1.2rem;">Alberto Mendoza Andrade</h1>
+
+          <p class="title">Technology Consultant</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+                <a href="mailto:betomendozaandrade@gmail.com" class="contact-link" style="font-size: 80%;">betomendozaandrade<br>@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12535330689" class="contact-link">+1 (253) 533-0689</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2002-06-20">June 20, 2002</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Seattle, Washington, USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+<ul class="social-list">
+
+  <li class="social-item">
+    <a href="https://www.linkedin.com/in/albertoma/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+  </li>
+
+  <li class="social-item">
+    <a href="https://www.instagram.com/alberto.mendoza7" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+  </li>
+
+  <li class="social-item">
+    <a href="https://www.tiktok.com/@alberto.mendoza?is_from_webapp=1&sender_device=pc" class="social-link" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+      <ion-icon name="logo-tiktok"></ion-icon>
+    </a>
+  </li>
+
+</ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="nav-item">
+             <a class="nav-link" href="https://fir-rumba-afc.notion.site/Beto-Builds-24a1a00c908e80a1964bea109fee97ee?pvs=143" target="_blank">Blog</a>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm Alberto Mendoza Andrade, a Business Technology Solutions Analyst at Deloitte, aspiring Product Manager, and entrepreneur from Seattle, Washington. I’m passionate about solving complex problems with practical, user-centered solutions. This includes building intuitive digital products, driving strategic initiatives, and improving service delivery across industries.
+          </p>
+        
+          <p>
+            I specialize in connecting technology with people. At 18, I co-founded and operated my family’s construction business, where I led project estimation, client relations, digital marketing, and financial management. During my four-year tenure, I helped generate over $1 million in revenue and increased project leads by 400 percent. That experience shaped my ability to lead under pressure, adapt quickly, and deliver meaningful results.
+          </p>
+        
+          <p>
+            At Deloitte, I apply the same mindset to help clients modernize workflows, streamline operations, and achieve lasting impact.
+          </p>
+        
+          <p>
+            My goal is simple: to make your vision clear, compelling, and scalable. I don’t just consult. I bring ideas to life in a way that is both effective and uniquely yours.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+          <img src="./assets/images/cpu.svg" alt="cpu icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+          <h4 class="h4 service-item-title">Business Technology Solutions</h4>
+          <p class="service-item-text">
+            Helping clients improve operations through enterprise systems and tech-driven strategy at a professional level.
+          </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+          <img src="./assets/images/calculator.svg" alt="calculator icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+          <h4 class="h4 service-item-title">Project Estimation & Sales</h4>
+          <p class="service-item-text">
+            Creating accurate estimates and sales strategies that drive revenue growth and client trust.
+          </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+          <img src="./assets/images/refresh.svg" alt="refresh icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+          <h4 class="h4 service-item-title">Digital Transformation</h4>
+          <p class="service-item-text">
+            Modernizing traditional businesses with digital tools, automation, and workflow optimization.
+          </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+          <img src="./assets/images/compass.svg" alt="compass icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+          <h4 class="h4 service-item-title">Mentorship & Leadership</h4>
+          <p class="service-item-text">
+            Supporting student development through mentoring, workshops, and inclusive leadership.
+          </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item data-modal-index="0">
+
+          <figure class="testimonials-avatar-box">
+            <img src="./assets/images/user.svg" alt="Giancarlo Lucia" width="60" data-testimonials-avatar>
+          </figure>
+
+          <h4 class="h4 testimonials-item-title" data-testimonials-title>Giancarlo Lucia</h4>
+
+          <div class="testimonials-text" data-testimonials-text>
+            <p>
+              From the very beginning, Alberto Jr. stood out for his professionalism, sharp communication, and business acumen. He was the most prepared and polished of all the contractors I met, clearly bringing both industry knowledge and a business mindset. He managed the project with precision, was transparent about timelines and costs, and delivered everything ahead of schedule. It’s rare to meet someone so young who operates at such a high level. This guy is going places.
+            </p>
+            <time datetime="2025-07-17">July 17, 2025</time>
+          </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+          <figure class="testimonials-avatar-box">
+            <img src="./assets/images/user.svg" alt="Jonnelle Jue" width="60" data-testimonials-avatar>
+          </figure>
+
+          <h4 class="h4 testimonials-item-title" data-testimonials-title>Jonnelle Jue</h4>
+
+          <div class="testimonials-text" data-testimonials-text>
+            <p>
+              Working with Alberto and his team was a seamless experience. From the permitting process to final walkthroughs, Alberto communicated clearly, coordinated every step, and ensured all design and code requirements were met. He demonstrated attention to detail, responsiveness, and a genuine care for doing things the right way. His leadership made the entire process feel effortless.
+            </p>
+            <time datetime="2022-09-03">September 3, 2022</time>
+          </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+          <figure class="testimonials-avatar-box">
+            <img src="./assets/images/user.svg" alt="Keshav Puttaswamy" width="60" data-testimonials-avatar>
+          </figure>
+
+          <h4 class="h4 testimonials-item-title" data-testimonials-title>Keshav Puttaswamy</h4>
+
+          <div class="testimonials-text" data-testimonials-text>
+            <p>
+              Alberto is a perfectionist in the best way possible. He approached our complex front step redesign with thoughtful problem-solving, checked every measurement multiple times, and communicated throughout with clarity and patience. Even as the scope expanded, he honored the original quote and timeline. His pride in his work and respect for clients make him stand out.
+            </p>
+            <time datetime="2025-05-10">May 10, 2025</time>
+          </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+          <figure class="testimonials-avatar-box">
+            <img src="./assets/images/user.svg" alt="Ron A." width="60" data-testimonials-avatar>
+          </figure>
+
+          <h4 class="h4 testimonials-item-title" data-testimonials-title>Ron A.</h4>
+
+          <div class="testimonials-text" data-testimonials-text>
+            <p>
+              Alberto Jr. brought a level of professionalism and organization you don’t often see in this industry. He was transparent about the process, walked me through each step, and managed the crew with confidence and calm. I felt informed and taken care of the entire time. It was a top-tier customer experience from start to finish, thanks to his leadership.
+            </p>
+            <time datetime="2025-05-10">May 10, 2025</time>
+          </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+          <img src="" alt="" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title></h4>
+
+              <time data-modal-date></time>
+
+              <div data-modal-text>
+          <p></p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+        <!--
+          - affiliations
+        -->
+
+        <section class="affiliations">
+
+          <h3 class="h3 affiliations-title">Affiliations</h3>
+
+          <ul class="affiliations-list has-scrollbar" style="display: flex; overflow-x: auto; gap: 24px; padding-bottom: 8px;">
+            <li class="affiliations-item" style="flex: 0 0 auto;">
+              <a href="#">
+                <img src="./assets/images/D.png" alt="Deloitte" style="height:94px; width:94px; object-fit:contain;">
+              </a>
+            </li>
+            <li class="affiliations-item" style="flex: 0 0 auto;">
+              <a href="#">
+                <img src="./assets/images/uw.png" alt="University of Washington" style="height:94px; width:94px; object-fit:contain;">
+              </a>
+            </li>
+            <li class="affiliations-item" style="flex: 0 0 auto;">
+              <a href="#">
+                <img src="./assets/images/somos.png" alt="Somos" style="height:94px; width:94px; object-fit:contain;">
+              </a>
+            </li>
+            <li class="affiliations-item" style="flex: 0 0 auto;">
+              <a href="#">
+                <img src="./assets/images/alpha.png" alt="Alpha" style="height:94px; width:94px; object-fit:contain;">
+              </a>
+            </li>
+            <li class="affiliations-item" style="flex: 0 0 auto;">
+              <a href="#">
+                <img src="./assets/images/alpfa.png" alt="ALPFA" style="height:94px; width:94px; object-fit:contain;">
+              </a>
+            </li>
+            <li class="affiliations-item" style="flex: 0 0 auto;">
+              <a href="#">
+                <img src="./assets/images/odphi.avif" alt="Omega Delta Phi" style="height:94px; width:94px; object-fit:contain;">
+              </a>
+            </li>
+            <li class="affiliations-item" style="flex: 0 0 auto;">
+              <a href="#">
+                <img src="./assets/images/fife.png" alt="Fife School District" style="height:94px; width:94px; object-fit:contain;">
+              </a>
+            </li>
+            <li class="affiliations-item" style="flex: 0 0 auto;">
+              <a href="#">
+                <img src="./assets/images/sportco.png" alt="Sportco" style="height:94px; width:94px; object-fit:contain;">
+              </a>
+            </li>
+          </ul>
+            </ul>
+            </ul>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">University of Washington, Michael G. Foster School of Business</h4>
+              <span>2022 — 2025</span>
+              <p class="timeline-text">
+              Bachelor of Arts in Business Administration; GPA: 3.3<br>
+              Concentration in Finance & Information Systems, Minor in Real Estate<br>
+              Recipient of prestigious Husky 100 Award, Dean’s List, and multiple, competitive scholarships.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Pierce College</h4>
+              <span>2020 — 2022</span>
+              <p class="timeline-text">
+              Associate of Arts in Business Administration; GPA 3.99<br>
+              Graduated with Honors<br>
+              President's List, Scholarship recipient, and Phi Theta Kappa Honors Society
+              </p>
+            </li>
+
+            </ol>
+
+            </section>
+
+            <section class="timeline"></section>
+
+            <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Business Technology Solutions Analyst — Deloitte Consulting</h4>
+              <span>Incoming Fall 2025</span>
+              <p class="timeline-text">
+              Delivering tech-driven consulting solutions to help clients modernize operations and scale business processes.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Founder & Project Manager — Alpha Concrete, LLC</h4>
+              <span>2021 — 2025</span>
+              <p class="timeline-text">
+              Built and scaled a $250K+ construction business. Led digital transformation, implemented Salesforce CRM, and improved profitability through strategic estimation, marketing, and client service.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Student Office Assistant — UW Disability Resources for Students</h4>
+              <span>2024 — 2025</span>
+              <p class="timeline-text">
+              Managed student service inquiries and cross-department coordination to support equitable academic access.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Recreation Leader I — Fife Aquatics Center</h4>
+              <span>2019 — 2024</span>
+              <p class="timeline-text">
+              Trained staff and leveraged digital tools to enhance efficiency in facility operations and registration processes.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Sales Associate — Sportco Sporting Goods</h4>
+              <span>2020</span>
+              <p class="timeline-text">
+              Specialized in camping and outdoor gear. Managed inventory, processed transactions, and delivered personalized customer experiences to boost department sales.
+              </p>
+            </li>
+
+            </ol>
+
+            </section>
+
+            <section class="timeline">
+
+            <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="people-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Leadership & Activities</h3>
+            </div>
+
+            <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Internal Vice President — Omega Delta Phi Inc.</h4>
+              <span>2022 — 2025</span>
+              <p class="timeline-text">
+              Organized workshops in AI, finance, and legal literacy. Supported academic performance and chapter leadership.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Mentor — Building Networks Program</h4>
+              <span>2023 — 2025</span>
+              <p class="timeline-text">
+              Guided first-generation students in career planning, major selection, and professional development.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Consultant — Foster Strategy Case Competition</h4>
+              <span>Winter 2025</span>
+              <p class="timeline-text">
+              Developed market entry strategies for Brooks Running, presenting to corporate judges on risk and feasibility.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Leadership Roles — ALPFA (Association of Latino Professionals for America)</h4>
+              <span>2022 — 2024</span>
+              <p class="timeline-text">
+              Led internal engagement, mentorship events, and fundraising efforts to strengthen chapter programming and community involvement.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Consultant — DubGrub Overhaul Project (IS 460)</h4>
+              <span>Spring 2024</span>
+              <p class="timeline-text">
+              Advised on feature upgrades for the DubGrub app, including rewards and scheduling integration. Proposed encryption and 2FA to improve user engagement and data security.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Lead Researcher & Presenter — AI in Cybersecurity (IS 410)</h4>
+              <span>Winter 2024</span>
+              <p class="timeline-text">
+              Led a class-wide presentation on AI-driven tools for penetration testing. Explored how automation enhances vulnerability detection and strengthens cybersecurity practices.
+              </p>
+            </li>
+
+            </ol>
+
+            </section>
+
+            <section class="skill">
+
+            <h3 class="h3 skills-title">My Skills</h3>
+
+            <ul class="skills-list content-card">
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+              <h5 class="h5">Business Strategy</h5>
+              <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+              <h5 class="h5">AI Tools</h5>
+              <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+              <h5 class="h5">SQL</h5>
+              <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+              <h5 class="h5">Python</h5>
+              <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+
+            </ul>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+<!--
+  - #PORTFOLIO
+-->
+<article class="portfolio" data-page="portfolio">
+
+  <header>
+    <h2 class="h2 article-title">Portfolio</h2>
+  </header>
+
+  <section class="projects">
+
+    <!-- Filter buttons -->
+    <ul class="filter-list">
+      <li class="filter-item">
+        <button class="active" data-filter-btn>All</button>
+      </li>
+      <li class="filter-item">
+        <button data-filter-btn>AI & Data</button>
+      </li>
+      <li class="filter-item">
+        <button data-filter-btn>App/Product Concepts</button>
+      </li>
+      <li class="filter-item">
+        <button data-filter-btn>Real Estate</button>
+      </li>
+    </ul>
+
+    <!-- Filter select (mobile) -->
+    <div class="filter-select-box">
+      <button class="filter-select" data-select>
+        <div class="select-value" data-selecct-value>Select category</div>
+        <div class="select-icon">
+          <ion-icon name="chevron-down"></ion-icon>
+        </div>
+      </button>
+
+      <ul class="select-list">
+        <li class="select-item"><button data-select-item>All</button></li>
+        <li class="select-item"><button data-select-item>AI & Data</button></li>
+        <li class="select-item"><button data-select-item>App/Product Concepts</button></li>
+        <li class="select-item"><button data-select-item>Real Estate</button></li>
+      </ul>
+    </div>
+
+    <!-- Projects -->
+    <ul class="project-list">
+
+<!-- AI & Data — AI Penetration Testing -->
+<!-- ===================== FEATURED (Meta-RPM ready) ===================== -->
+
+<!-- Featured — DubGrub (Consumer Product) -->
+<li class="project-item active"
+    data-filter-item
+    data-category="App/Product Concepts"
+    data-proj-title="DubGrub 2.0: Faster Ordering & Smarter Pickups for Campus Dining"
+    data-proj-desc="Defined MVP flows (browse → customize → pay → pickup), prioritized roadmap, and ran hallway usability tests (n=18). Shipped prototype that reduced time-to-checkout 28% and improved task success 72%→94%. Wrote PRD, partner brief (MyPlan + Maps), and experiment plan for A/B follow-ups."
+    data-link1-label="Report #1"
+    data-link1-url="https://drive.google.com/file/d/1W6kwCENaCtg1EsjoeieieYdIqfxJuU9B/view?usp=sharing"
+    data-link2-label="Report #2"
+    data-link2-url="https://drive.google.com/file/d/1jDlfp_qLNtv8cu3lbLsQtl0WrzfL1sjV/view?usp=sharing"
+    data-link3-label="Presentation"
+    data-link3-url="https://drive.google.com/file/d/1EuOZRN7TEHHyainVJakY7wipDppIRK80/view?usp=sharing">
+  <a href="#">
+    <figure class="project-img">
+      <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+      <img src="./assets/images/Dub.jpg" alt="DubGrub App Upgrade" loading="lazy">
+    </figure>
+    <h3 class="project-title">DubGrub 2.0 (Featured)</h3>
+    <p class="project-category">App/Product Concepts</p>
+  </a>
+</li>
+
+<!-- Featured — Oakley AR Snow Goggles (Consumer Hardware + AR) -->
+<li class="project-item active"
+    data-filter-item
+    data-category="App/Product Concepts"
+    data-proj-title="Oakley AR Snow Goggles: Real-Time Navigation & Metrics"
+    data-proj-desc="Owned concept PRD, personas, and JTBD; scoped MVP (HUD stats, nav, SOS) with safety guardrails. Proposed Apple/Meta ecosystem partnership to de-risk R&D. Defined GTM pilots (resort demos/XGames), success metrics (attach, DAU/MAU), and durability/solar-assist risk mitigations."
+    data-link1-label="Presentation"
+    data-link1-url="https://drive.google.com/file/d/12y-AqICPPfl5Oq99ffoXXfdHIYEEH9xM/view?usp=sharing"
+    data-link2-label="Report"
+    data-link2-url="https://drive.google.com/file/d/1ysfCPFgome0Nh9vdJ0FmcwGku-PsMoNk/view?usp=sharing">
+  <a href="#">
+    <figure class="project-img">
+      <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+      <img src="./assets/images/oakley.png" alt="Oakley AR Snow Goggles Concept" loading="lazy">
+    </figure>
+    <h3 class="project-title">Oakley AR Snow Goggles (Featured)</h3>
+    <p class="project-category">App/Product Concepts</p>
+  </a>
+</li>
+
+<!-- Featured — Snapchat Strategy Overhaul (Consumer Social) -->
+<li class="project-item active"
+    data-filter-item
+    data-category="App/Product Concepts"
+    data-proj-title="Snapchat: AR Roadmap, Privacy Differentiation & Cost Discipline"
+    data-proj-desc="Redefined product strategy: privacy-first positioning, AR feature ladder, and beta-ring rollouts. Prioritized infra cost reductions (incl. hybrid/owned servers) with guardrail metrics (latency, crash-free rate). Wrote OKRs to grow AR ad yield and protect retention with minimalist UI."
+    data-link1-label="Report"
+    data-link1-url="https://drive.google.com/file/d/1YZ8tIf5JnWLgIKosUJtt8EY2U--5w7k9/view?usp=sharing">
+  <a href="#">
+    <figure class="project-img">
+      <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+      <img src="./assets/images/snap.png" alt="Snapchat Strategy Overhaul" loading="lazy">
+    </figure>
+    <h3 class="project-title">Snapchat Strategy Overhaul (Featured)</h3>
+    <p class="project-category">App/Product Concepts</p>
+  </a>
+</li>
+
+<!-- Featured — Tesla Scooter (Consumer Mobility) -->
+<li class="project-item active"
+    data-filter-item
+    data-category="App/Product Concepts"
+    data-proj-title="Tesla Scooter: Student-First Micromobility Concept & GTM"
+    data-proj-desc="Defined target persona and value props; scoped MVP (foldable HW + app) and campus fleet pilots. Modeled TCO vs. rideshare; designed safety and charging ops. Drafted subscription pricing, partner integrations, and north-star metrics (rides/user/wk, retention)."
+    data-link1-label="Report"
+    data-link1-url="https://drive.google.com/file/d/1eDMJlUHH5LVBZhHmugZnCoDJr8PD16Tl/view?usp=drive_link"
+    data-link2-label="Presentation"
+    data-link2-url="https://drive.google.com/file/d/1Kc2rDIyHHG4qtn40J04YgAV3g8EmY4qr/view?usp=drive_link">
+  <a href="#">
+    <figure class="project-img">
+      <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+      <img src="./assets/images/Tesla.png" alt="Tesla Scooter Concept" loading="lazy">
+    </figure>
+    <h3 class="project-title">Tesla Scooter (Featured)</h3>
+    <p class="project-category">App/Product Concepts</p>
+  </a>
+</li>
+
+<!-- ===================== AI & DATA ===================== -->
+
+<!-- AI & Data — Movie Success Prediction -->
+<li class="project-item active"
+    data-filter-item
+    data-category="AI & Data"
+    data-proj-title="Predicting Box Office: Pre-Release Signal Modeling"
+    data-proj-desc="Shipped regression pipeline on budget/genre/cast/director to predict revenue & ratings. Engineered release-timing and franchise features; built dashboards; defined model monitoring plan. Proposed greenlight heuristics and test-spend sizing for trailers."
+    data-link1-label="Report"
+    data-link1-url="https://drive.google.com/file/d/17lhBYXgpCoe4d7jttHaui_M26tCTWtAT/view?usp=sharing"
+    data-link2-label="Presentation"
+    data-link2-url="https://drive.google.com/file/d/13YoSOPgdXI8YrruwC-Dw6o4YSR7r5Kaq/view?usp=sharing">
+  <a href="#">
+    <figure class="project-img">
+      <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+      <img src="./assets/images/oracle.png" alt="Movie Success Prediction" loading="lazy">
+    </figure>
+    <h3 class="project-title">Movie Success Prediction</h3>
+    <p class="project-category">AI & Data</p>
+  </a>
+</li>
+
+<!-- AI & Data — AI Penetration Testing -->
+<li class="project-item active"
+    data-filter-item
+    data-category="AI & Data"
+    data-proj-title="AI-Assisted Penetration Testing: Continuous, Scalable Security"
+    data-proj-desc="Prototyped AI triage from recon → exploit suggestions → draft reporting. Benchmarked vs. manual baseline to cut triage time ~40% while improving low-risk coverage. Added safety rails (prompt hygiene, audit logs) and decision review for false-positive control."
+    data-link1-label="Presentation"
+    data-link1-url="https://drive.google.com/file/d/14hkJMzL-_GAZVa8uc_0RancLPWfVxi5n/view?usp=drive_link">
+  <a href="#">
+    <figure class="project-img">
+      <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+      <img src="./assets/images/Ai.jpg" alt="AI-Assisted Penetration Testing" loading="lazy">
+    </figure>
+    <h3 class="project-title">AI Penetration Testing</h3>
+    <p class="project-category">AI & Data</p>
+  </a>
+</li>
+
+<!-- AI & Data — Sleep Quality Analysis -->
+<li class="project-item active"
+    data-filter-item
+    data-category="AI & Data"
+    data-proj-title="Sleep Quality Insights: Feature Signals from 1,000 Participants"
+    data-proj-desc="Cleaned and modeled multi-factor sleep dataset (Python/SQL). Identified stress index and late-evening activity as strongest negative predictors. Delivered viz pack + data dictionary; proposed in-app habit-nudge experiments and measurement plan."
+    data-link1-label="Presentation"
+    data-link1-url="https://drive.google.com/file/d/1gucSDXrq3uV2M0CMbDkQwK6AzIXvHNC9/view?usp=drive_link">
+  <a href="#">
+    <figure class="project-img">
+      <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+      <img src="./assets/images/Sleep.jpg" alt="Sleep Quality Data Analysis" loading="lazy">
+    </figure>
+    <h3 class="project-title">Sleep Quality Analysis</h3>
+    <p class="project-category">AI & Data</p>
+  </a>
+</li>
+
+<!-- AI & Data — Order Management System -->
+<li class="project-item active"
+    data-filter-item
+    data-category="AI & Data"
+    data-proj-title="Order Management CLI: Offline/Online Sales in One Lightweight Tool"
+    data-proj-desc="Built Python CRUD system with import/export, autosave, and schema validation. Designed for future UI layer. Improved ops reliability and created revenue summaries by channel; added search and reset features for quicker workflows."
+    data-link1-label="View Code"
+    data-link1-url="https://drive.google.com/file/d/177L6dE9gq7tKffFcwnPHfTOKkSthray4/view?usp=sharing">
+  <a href="#">
+    <figure class="project-img">
+      <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+      <img src="./assets/images/Python.jpg" alt="Order Management System in Python" loading="lazy">
+    </figure>
+    <h3 class="project-title">Order Management System</h3>
+    <p class="project-category">AI & Data</p>
+  </a>
+</li>
+
+<!-- ===================== CONSUMER / STRATEGY ===================== -->
+
+<!-- Strategy — Gillette Revamp -->
+<li class="project-item active"
+    data-filter-item
+    data-category="Strategy"
+    data-proj-title="Gillette Growth Plan: Subscriptions, Price Architecture & Agile Pilots"
+    data-proj-desc="Analyzed DTC disruptors; defined price ladders, loyalty, and replenishment cadence. Proposed phased Agile pilots in test markets with LTV/CAC guardrails. Forecasted retention lift via curated bundles and subscription UX improvements."
+    data-link1-label="Report"
+    data-link1-url="https://drive.google.com/file/d/1EejLAqKunu7P549Wc0E4Fc9I-PzKr9PN/view?usp=sharing">
+  <a href="#">
+    <figure class="project-img">
+      <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+      <img src="./assets/images/gillette.webp" alt="Gillette Strategy Revamp" loading="lazy">
+    </figure>
+    <h3 class="project-title">Gillette Strategy Revamp</h3>
+    <p class="project-category">Strategy</p>
+  </a>
+</li>
+
+<!-- Strategy — Brooks PACE -->
+<li class="project-item active"
+    data-filter-item
+    data-category="Strategy"
+    data-proj-title="Brooks PACE: $25M Kids’ Running Entry—Product & GTM"
+    data-proj-desc="Sized youth performance niche; defined PACE line specs, retail partners, and community GTM. Built 3-yr forecast to 15% niche share; recommended athlete-led seeding and e-comm fit-finder flow. Set OKRs for awareness → conversion funnel."
+    data-link1-label="Presentation"
+    data-link1-url="https://drive.google.com/file/d/1xMi_cbSgv0xGrGIEnJ3oirHXMUaVBZ-b/view?usp=sharing"
+    data-link2-label="Report"
+    data-link2-url="https://drive.google.com/file/d/1dJHe8c1K_aJDRGMvTHjftDBibz_g5YIc/view?usp=sharing">
+  <a href="#">
+    <figure class="project-img">
+      <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+      <img src="./assets/images/brooks.jpg" alt="Brooks PACE Strategy" loading="lazy">
+    </figure>
+    <h3 class="project-title">Brooks PACE Strategy</h3>
+    <p class="project-category">Strategy</p>
+  </a>
+</li>
+
+<!-- ===================== HEALTH / ACCESS ===================== -->
+
+<!-- App/Product — SmartDoc Telemedicine -->
+<li class="project-item active"
+    data-filter-item
+    data-category="App/Product Concepts"
+    data-proj-title="SmartDoc: 24/7 AI Telehealth Triage with Accessibility by Design"
+    data-proj-desc="Authored concept PRD and escalation rails for PHI safety. Mapped end-to-end flows, wireframes, and metrics (wait-time, deflection, CSAT). Prioritized WCAG features and provider handoff to reduce queue times."
+    data-link1-label="Report"
+    data-link1-url="https://drive.google.com/file/d/16si7aqmnrAlFTtOulkBig-HZOs5UR04X/view?usp=sharing"
+    data-link2-label="Presentation"
+    data-link2-url="https://drive.google.com/file/d/1nYEiYeeM8Qxq9OkDd89oA5-U-AuXETXG/view?usp=sharing">
+  <a href="#">
+    <figure class="project-img">
+      <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+      <img src="./assets/images/SmartDoc.jpg" alt="SmartDoc Telemedicine Concept" loading="lazy">
+    </figure>
+    <h3 class="project-title">SmartDoc Telemedicine</h3>
+    <p class="project-category">App/Product Concepts</p>
+  </a>
+</li>
+
+<!-- ===================== URBAN / REAL ESTATE ===================== -->
+
+<!-- Real Estate — Urban Planning Simulation -->
+<li class="project-item active"
+    data-filter-item
+    data-category="Real Estate"
+    data-proj-title="Tomorrow’s Elmwood: People-First, Profitable Mixed-Use District"
+    data-proj-desc="Facilitated stakeholder alignment; delivered 2:1 jobs-to-housing, 75% net-zero, and 14% open space. Integrated affordable units, bike corridors, and jobs-linked shelter. Produced fiscal model and consensus-driven plan with equity and climate resilience KPIs."
+    data-link1-label="Report"
+    data-link1-url="https://drive.google.com/file/d/13aTTV7G_fi2eaaTNngNZ_W2dU3b2mJDM/view?usp=sharing"
+    data-link2-label="Presentation"
+    data-link2-url="https://drive.google.com/file/d/1Ucz8NTTtWl5n-zxFxbWrucfMYVtI-06l/view?usp=sharing">
+  <a href="#">
+    <figure class="project-img">
+      <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+      <img src="./assets/images/elmwood.png" alt="Urban Planning Simulation Elmwood" loading="lazy">
+    </figure>
+    <h3 class="project-title">Urban Planning Simulation</h3>
+    <p class="project-category">Real Estate</p>
+  </a>
+</li>
+
+<!-- Real Estate — Rainier Beach Development -->
+<li class="project-item active"
+    data-filter-item
+    data-category="Real Estate"
+    data-proj-title="Rainier Beach: Inclusive, Transit-Oriented Mixed-Use Plan"
+    data-proj-desc="Delivered feasibility + phased plan for housing/retail/green space with cultural preservation. Balanced IRR targets with affordability. Published data workbook and stakeholder deck; defined city-review readiness checklist."
+    data-link1-label="Report"
+    data-link1-url="https://drive.google.com/file/d/1LP5UQGXayyTgmuwJxXM3HusCW4INoLGa/view?usp=sharing"
+    data-link2-label="Data Workbook"
+    data-link2-url="https://docs.google.com/spreadsheets/d/1DiT6Ai7rhpimPfWo_VDGkTk2SRE32Y_j/edit?usp=sharing&ouid=104558220753461079522&rtpof=true&sd=true"
+    data-link3-label="Presentation"
+    data-link3-url="https://drive.google.com/file/d/1G8flV-3kYTRYWAO3rmMtP7QCHxg3DkOM/view?usp=sharing">
+  <a href="#">
+    <figure class="project-img">
+      <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+      <img src="./assets/images/rb development.jpg" alt="Rainier Beach Development Plan" loading="lazy">
+    </figure>
+    <h3 class="project-title">Rainier Beach Development</h3>
+    <p class="project-category">Real Estate</p>
+  </a>
+</li>
+
+<!-- ===================== LEGACY (KEEP FOR BREADTH) ===================== -->
+
+<!-- Real Estate — U-District Triplex -->
+<li class="project-item active"
+    data-filter-item
+    data-category="Real Estate"
+    data-proj-title="U-District Triplex: Investment Thesis, Scenarios & Go/No-Go"
+    data-proj-desc="Built bottom-up model across rate/occupancy scenarios; sensitivity on NOI, rent growth, and refinance timing. Highlighted developer risks and mitigations; recommended phased value-add plan with permitting checkpoints."
+    data-link1-label="Report"
+    data-link1-url="https://drive.google.com/file/d/1fjjfDnfM8qcXYQfBH9qQCtMyR6raXwr6/view?usp=drive_link">
+  <a href="#">
+    <figure class="project-img">
+      <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+      <img src="./assets/images/Home.jpg" alt="U-District Triplex Analysis" loading="lazy">
+    </figure>
+    <h3 class="project-title">U-District Triplex</h3>
+    <p class="project-category">Real Estate</p>
+  </a>
+</li>
+    </ul>
+
+  </section>
+
+</article>
+
+<!-- Project Modal (supports up to 3 links via data-link1/2/3-*) -->
+<div class="modal-container" data-project-modal-container aria-hidden="true">
+  <div class="overlay" data-project-overlay></div>
+
+  <section class="testimonials-modal project-modal"
+           role="dialog"
+           aria-modal="true"
+           aria-labelledby="project-modal-title"
+           aria-describedby="project-modal-desc">
+
+    <button class="modal-close-btn" data-project-modal-close aria-label="Close modal">
+      <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+    </button>
+
+    <div class="modal-content">
+      <h4 id="project-modal-title" class="h3 modal-title" data-project-modal-title></h4>
+      <p id="project-modal-desc" data-project-modal-desc></p>
+
+      <!-- Dynamic buttons injected by JS (up to 3) -->
+      <div class="modal-actions"
+           data-project-modal-links
+           style="display:flex; gap:10px; flex-wrap:wrap;">
+        <!-- JS will insert <a class="form-btn" target="_blank" rel="noopener">…</a> here -->
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d185154.90932854608!2d-122.50460393224745!3d47.60859697856638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C%20WA!5e1!3m2!1sen!2sus!4v1753089639518!5m2!1sen!2sus"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
