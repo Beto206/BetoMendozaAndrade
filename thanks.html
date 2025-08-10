@@ -29,8 +29,8 @@
     /* LAYERS */
     #confettiCanvas{position:fixed;inset:0;pointer-events:none;z-index:1}  /* back */
     .wrap{min-height:100dvh;display:grid;place-items:center;padding:24px;position:relative;z-index:2} /* middle */
-    #fxCanvas{position:fixed;inset:0;pointer-events:none;z-index:3}       /* front */
 
+    /* Card */
     article.contact{
       background:var(--eerie-black-2);
       border:1px solid var(--jet);
@@ -38,6 +38,8 @@
       padding:24px;
       width:min(720px,94vw);
       box-shadow:-4px 8px 24px rgba(0,0,0,.28);
+      /* Fallback in case global CSS hides non-active sections */
+      display:block !important;
     }
     .article-title{margin:0 0 8px}
     .subtitle{color:var(--light-gray-70);margin:0 0 16px}
@@ -75,9 +77,10 @@
 <body>
   <!-- background confetti -->
   <canvas id="confettiCanvas"></canvas>
-  <!-- middle content -->
+
   <div class="wrap">
-    <article class="contact" data-page="contact">
+    <!-- NOTE: 'active' ensures visibility if your CSS hides non-active sections -->
+    <article class="contact active" data-page="contact">
       <header>
         <h2 class="h2 article-title">
           <span style="vertical-align:middle;margin-right:.35rem">
@@ -122,11 +125,9 @@
       </section>
     </article>
   </div>
-  <!-- foreground fireworks -->
-  <canvas id="fxCanvas"></canvas>
 
   <script>
-    // ---------- CONFETTI (background, lighter, quick taper ~3-4s) ----------
+    // ---------- CONFETTI (background, subtle, smooth ~3–4s total) ----------
     (function confetti(){
       const canvas = document.getElementById('confettiCanvas');
       const ctx = canvas.getContext('2d');
@@ -138,107 +139,43 @@
       function resize(){ W = canvas.width = Math.floor(innerWidth*DPR); H = canvas.height = Math.floor(innerHeight*DPR); }
       resize(); addEventListener('resize', resize);
 
-      function spawn(batch=28){
+      function spawn(batch=22){
         for (let i=0;i<batch;i++){
           confs.push({
             x: Math.random()*W, y: -Math.random()*H*0.4 - 20*DPR,
             w: DPR*(3+Math.random()*3), h: DPR*(6+Math.random()*8),
-            vy: DPR*(1.2+Math.random()*1.8), vx: DPR*(Math.random()-.5)*0.55,
-            rot: Math.random()*Math.PI*2, vr:(Math.random()-.5)*0.12,
-            hue: (i*37 + Math.random()*120)%360
+            vy: DPR*(1.1+Math.random()*1.6), vx: DPR*(Math.random()-.5)*0.45,
+            rot: Math.random()*Math.PI*2, vr: (Math.random()-.5)*0.1,
+            hue: (i*37 + Math.random()*100)%360
           });
         }
       }
-      // brief burst
-      spawn(90);
+      // light burst then quick taper
+      spawn(70);
 
       function step(ts){
         if (!start) start = ts;
         const t = (ts - start)/1000;
         ctx.clearRect(0,0,W,H);
 
-        // gentle stream first 1.2s, then taper to 2.5s, then stop
-        if (t < 1.2 && spawning) { if (Math.random()<0.6) spawn(10); }
-        else if (t < 2.5 && spawning) { if (Math.random()<0.25) spawn(6); }
+        // brief stream then taper, total ~3–4s
+        if (t < 1.0 && spawning) { if (Math.random()<0.5) spawn(8); }
+        else if (t < 2.2 && spawning) { if (Math.random()<0.2) spawn(5); }
         else { spawning = false; }
 
         confs.forEach(c=>{
           c.x += c.vx; c.y += c.vy; c.rot += c.vr;
-          c.vx *= 0.996; c.vy = Math.min(c.vy + 0.005*DPR, 4*DPR);
+          c.vx *= 0.996; c.vy = Math.min(c.vy + 0.004*DPR, 3.6*DPR);
           ctx.save(); ctx.translate(c.x, c.y); ctx.rotate(c.rot);
-          ctx.fillStyle = `hsl(${c.hue} 85% 60%)`;
+          ctx.fillStyle = `hsl(${c.hue} 80% 58%)`;
           ctx.fillRect(-c.w/2, -c.h/2, c.w, c.h);
           ctx.restore();
         });
 
+        // prune offscreen to allow a natural "last bits" fall
         for (let i=confs.length-1;i>=0;i--) if (confs[i].y > H + 24*DPR) confs.splice(i,1);
 
         if (spawning || confs.length){ raf = requestAnimationFrame(step); }
-        else { cancelAnimationFrame(raf); removeEventListener('resize', resize); ctx.clearRect(0,0,W,H); }
-      }
-      requestAnimationFrame(step);
-    })();
-
-    // ---------- FIREWORKS (foreground, slightly dimmer, ~5–6s) ----------
-    (function fireworks(){
-      const canvas = document.getElementById('fxCanvas');
-      const ctx = canvas.getContext('2d');
-      const DPR = Math.max(1, window.devicePixelRatio || 1);
-      let W, H, raf, start;
-      const rockets = [], particles = [];
-
-      function resize(){ W = canvas.width = Math.floor(innerWidth*DPR); H = canvas.height = Math.floor(innerHeight*DPR); }
-      resize(); addEventListener('resize', resize);
-
-      function rnd(min,max){ return Math.random()*(max-min)+min; }
-      function spawnRocket(){
-        const x = rnd(W*0.2, W*0.8), y = H + rnd(20,70);
-        const vx = rnd(-0.45,0.45)*DPR, vy = -rnd(8.5,12)*DPR;
-        rockets.push({x,y,vx,vy,peak:rnd(-1.2,-0.8)});
-      }
-      function explode(x,y,hue){
-        const n = 85;
-        for(let i=0;i<n;i++){
-          const a = (Math.PI*2)*(i/n) + Math.random()*0.12;
-          const sp = rnd(2.2,5.8)*DPR;
-          particles.push({x,y, vx:Math.cos(a)*sp, vy:Math.sin(a)*sp, life:1, decay:rnd(0.01,0.02), hue:hue+rnd(-16,16), size:rnd(1.2,2.0)*DPR});
-        }
-      }
-
-      function step(ts){
-        if(!start) start = ts;
-        const t = (ts - start)/1000;
-
-        ctx.clearRect(0,0,W,H);
-
-        // launch cadence (~2.5s active, then taper to 5.5s)
-        if (t < 2.5 && Math.random()<0.35) spawnRocket();
-        else if (t < 5.5 && Math.random()<0.12) spawnRocket();
-
-        // rockets
-        for(let i=rockets.length-1;i>=0;i--){
-          const r = rockets[i];
-          r.x += r.vx; r.y += r.vy; r.vy += 0.1*DPR;
-          ctx.globalAlpha = 0.7; // dimmer
-          ctx.fillStyle = '#fff';
-          ctx.beginPath(); ctx.arc(r.x, r.y, 1.8*DPR, 0, Math.PI*2); ctx.fill();
-          ctx.globalAlpha = 1;
-          if (r.vy > r.peak){ explode(r.x,r.y,Math.floor(Math.random()*360)); rockets.splice(i,1); }
-        }
-
-        // particles
-        ctx.globalCompositeOperation = 'lighter';
-        for(let i=particles.length-1;i>=0;i--){
-          const p = particles[i];
-          p.x += p.vx; p.y += p.vy; p.vy += 0.018*DPR; p.vx*=0.986; p.vy*=0.986; p.life -= p.decay;
-          if (p.life<=0){ particles.splice(i,1); continue; }
-          ctx.globalAlpha = Math.max(p.life*0.8,0); // softer
-          ctx.fillStyle = `hsl(${p.hue} 90% 60%)`;
-          ctx.beginPath(); ctx.arc(p.x, p.y, p.size, 0, Math.PI*2); ctx.fill();
-        }
-        ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over';
-
-        if (t < 6 || rockets.length || particles.length){ raf = requestAnimationFrame(step); }
         else { cancelAnimationFrame(raf); removeEventListener('resize', resize); ctx.clearRect(0,0,W,H); }
       }
       requestAnimationFrame(step);
